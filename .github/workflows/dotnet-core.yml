@@ -26,5 +26,6 @@ jobs:
     - name: Publish NuGet
       uses: brandedoutcast/publish-nuget@v2.5.5
       with:
-        PROJECT_FILE_PATH: SimpleProxy/SimpleProxy.csproj   
+        PROJECT_FILE_PATH: SimpleProxy/SimpleProxy.csproj
+        VERSION_STATIC: 1.0.2  
         NUGET_KEY: ${{secrets.NUGET_API_KEY}} 
