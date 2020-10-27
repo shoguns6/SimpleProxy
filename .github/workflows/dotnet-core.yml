@@ -23,6 +23,7 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: Test
       run: dotnet test --no-restore --verbosity normal
-    - name: Publish  
+    - name: Publish 
+      uses: shoguns6/publish-nuget@v1.0.2  
       with:   
        NUGET_KEY: ${{secrets.NUGET_API_KEY}} 
